@@ -1,0 +1,1 @@
+alert("Alerting using Page Policy");

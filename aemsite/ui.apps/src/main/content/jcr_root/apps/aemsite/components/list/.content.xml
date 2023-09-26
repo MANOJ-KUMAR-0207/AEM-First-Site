@@ -3,5 +3,5 @@
     jcr:primaryType="cq:Component"
     jcr:title="List"
     sling:resourceSuperType="core/wcm/components/list/v3/list"
-    teaserDelegate="aemsite/components/teaser"
-    componentGroup="My AEM Website - Content"/>
+    componentGroup="My AEM Website - Content"
+    teaserDelegate="aemsite/components/teaser"/>
