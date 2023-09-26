@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2023-09-21T16:13:18.648+05:30"
+        cq:lastModified="{Date}2023-09-26T12:01:57.831+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemsite/settings/wcm/templates/edittable-template"
         jcr:primaryType="cq:PageContent"
@@ -13,21 +13,12 @@
             sling:resourceType="aemsite/components/container"
             layout="responsiveGrid">
             <title
-                jcr:created="{Date}2023-09-21T14:42:18.460+05:30"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2023-09-21T14:42:18.460+05:30"
+                jcr:lastModified="{Date}2023-09-22T18:32:36.488+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/title"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured">
-                    <default
-                        jcr:primaryType="nt:unstructured"
-                        behavior="newline"
-                        offset="0"
-                        width="12"/>
-                </cq:responsive>
-            </title>
+                linkTarget="_self"
+                type="h1"/>
             <text
                 jcr:created="{Date}2023-09-21T14:57:31.759+05:30"
                 jcr:createdBy="admin"
@@ -43,88 +34,105 @@
                         behavior="hide"/>
                 </cq:responsive>
             </text>
-            <contentfragment
-                jcr:created="{Date}2023-09-21T14:28:16.984+05:30"
+            <chart
+                jcr:created="{Date}2023-09-26T12:01:00.302+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2023-09-21T14:28:16.984+05:30"
+                jcr:lastModified="{Date}2023-09-26T12:01:00.302+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/contentfragment"
-                editable="{Boolean}true">
+                sling:resourceType="foundation/components/chart">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        behavior="newline"
                         offset="0"
                         width="7"/>
                 </cq:responsive>
-            </contentfragment>
-            <contentfragment_2071950831
-                jcr:created="{Date}2023-09-21T16:02:35.766+05:30"
+            </chart>
+            <download
+                jcr:created="{Date}2023-09-26T12:01:45.907+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2023-09-21T16:02:35.766+05:30"
+                jcr:lastModified="{Date}2023-09-26T12:01:45.907+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/contentfragment"
-                editable="{Boolean}true"
-                text="">
+                sling:resourceType="foundation/components/download">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
                         offset="0"
                         width="5"/>
                 </cq:responsive>
-            </contentfragment_2071950831>
+            </download>
             <helloworld
                 jcr:created="{Date}2023-09-21T16:06:30.874+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2023-09-21T16:06:30.874+05:30"
+                jcr:lastModified="{Date}2023-09-22T18:31:41.842+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/helloworld"
-                editable="{Boolean}true"/>
-            <carousel
-                jcr:created="{Date}2023-09-21T14:52:11.235+05:30"
+                sling:resourceType="aemsite/components/helloworld"/>
+            <text_1178393924
+                jcr:created="{Date}2023-09-26T11:22:26.686+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2023-09-21T15:43:59.715+05:30"
+                jcr:lastModified="{Date}2023-09-26T11:22:26.686+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/carousel"
-                accessibilityAutoItemTitles="false"
-                autopauseDisabled="false"
-                autoplay="false"
-                delay="5000">
-                <contentfragment_2102768501
-                    jcr:created="{Date}2023-09-21T14:52:32.339+05:30"
+                sling:resourceType="foundation/components/text"/>
+            <list
+                jcr:created="{Date}2023-09-22T18:30:12.592+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-09-22T18:31:39.066+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/list"/>
+            <carousel
+                jcr:created="{Date}2023-09-26T11:58:19.354+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-09-26T11:58:19.354+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="weretail/components/content/carousel">
+                <image
+                    jcr:created="{Date}2023-09-26T11:58:27.871+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2023-09-21T14:52:32.339+05:30"
+                    jcr:lastModified="{Date}2023-09-26T11:58:27.871+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemsite/components/contentfragment"
-                    editable="{Boolean}true"/>
-                <contentfragment_673823875
-                    jcr:created="{Date}2023-09-21T14:52:27.046+05:30"
+                    sling:resourceType="foundation/components/image"/>
+                <adaptiveimage
+                    jcr:created="{Date}2023-09-26T11:58:49.576+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2023-09-21T14:52:27.046+05:30"
+                    jcr:lastModified="{Date}2023-09-26T11:58:49.576+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemsite/components/contentfragment"
-                    text=""/>
-                <contentfragment_1875334374
-                    jcr:created="{Date}2023-09-21T14:52:22.664+05:30"
+                    sling:resourceType="foundation/components/adaptiveimage"/>
+                <image_1378062669
+                    jcr:created="{Date}2023-09-26T11:58:46.494+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2023-09-21T14:52:22.664+05:30"
+                    jcr:lastModified="{Date}2023-09-26T11:58:46.494+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemsite/components/contentfragment"
-                    text=""/>
+                    sling:resourceType="weretail/components/content/image"/>
             </carousel>
+            <heroimage
+                jcr:created="{Date}2023-09-26T11:58:32.905+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-09-26T11:58:32.905+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="weretail/components/content/heroimage"/>
             <text_1895793645
-                jcr:lastModified="{Date}2023-09-21T15:53:54.879+05:30"
+                jcr:lastModified="{Date}2023-09-22T18:28:10.514+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/text"
-                editable="{Boolean}true"/>
+                text="&lt;h1>&lt;b>FOOTER&lt;/b>&lt;/h1>&#xa;"
+                textIsRich="true"/>
+            <mytext
+                jcr:created="{Date}2023-09-26T11:23:45.264+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-09-26T11:23:45.264+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/myText"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
