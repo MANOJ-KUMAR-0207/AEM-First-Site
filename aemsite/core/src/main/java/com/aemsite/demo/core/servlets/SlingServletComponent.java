@@ -22,6 +22,7 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+import org.apache.sling.servlets.annotations.SlingServletPaths;
 import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.propertytypes.ServiceDescription;
@@ -37,20 +38,16 @@ import java.io.IOException;
  * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
  */
 @Component(service = { Servlet.class })
-@SlingServletResourceTypes(
-        resourceTypes="aemsite/components/page",
-        methods=HttpConstants.METHOD_GET,
-        extensions="txt")
+@SlingServletPaths(value="/bin/ServletForComponent")
 @ServiceDescription("Simple Demo Servlet")
-public class SimpleServlet extends SlingSafeMethodsServlet {
+public class SlingServletComponent extends SlingSafeMethodsServlet {
 
     private static final long serialVersionUID = 1L;
 
     @Override
-    protected void doGet(final SlingHttpServletRequest req,
-        final SlingHttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(final SlingHttpServletRequest req,final SlingHttpServletResponse resp) throws ServletException, IOException {
         final Resource resource = req.getResource();
         resp.setContentType("text/plain");
-        resp.getWriter().write("Title = " + resource.getValueMap().get(JcrConstants.JCR_TITLE));
+        resp.getWriter().write("Content from Servlet" );
     }
 }
