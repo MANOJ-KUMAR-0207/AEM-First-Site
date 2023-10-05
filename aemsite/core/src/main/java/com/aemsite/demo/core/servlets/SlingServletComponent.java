@@ -42,7 +42,7 @@ import java.io.IOException;
 @ServiceDescription("Simple Demo Servlet")
 public class SlingServletComponent extends SlingSafeMethodsServlet {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 5L;
 
     @Override
     protected void doGet(final SlingHttpServletRequest req,final SlingHttpServletResponse resp) throws ServletException, IOException {

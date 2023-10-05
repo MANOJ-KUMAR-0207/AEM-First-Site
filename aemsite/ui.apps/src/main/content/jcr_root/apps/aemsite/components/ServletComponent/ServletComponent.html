@@ -15,10 +15,6 @@
 */-->
 <div style="text-align: center;">
     <h2>Path Servlet Component</h2>
-    <div data-sly-test="${properties.text}">
-        <h3>Entered Text Value</h3>
-        <pre>${properties.text}</pre>
-    </div>
     <h3>Content retrived from Servlet</h3>
     <sly data-sly-use.servlet="/bin/ServletForComponent">
         Data from servlet: ${servlet.text}

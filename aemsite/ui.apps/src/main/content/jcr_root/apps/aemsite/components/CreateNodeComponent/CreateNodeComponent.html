@@ -1,0 +1,40 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<script>
+    // Define a function to invoke the servlet
+    function invokeServlet() {
+        $.ajax({
+            type: "POST", // or "GET" depending on your servlet configuration
+            url: "/bin/createNode", // Update with your servlet's URL
+            success: function(response) {
+                // Handle the servlet response here
+                console.log("Servlet response:", response);
+            },
+            error: function(xhr, status, error) {
+                // Handle errors here
+                console.error("Error:", error);
+            }
+        });
+    }
+    // Call the function to invoke the servlet
+    invokeServlet();
+</script>
+<button onclick="invokeServlet()">Create Node</button>
+
+
+
+
+
