@@ -13,7 +13,6 @@ import java.util.List;
 import org.apache.sling.api.resource.Resource;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-@Exporter(name="jackson",extensions="json")
 public class ContactCardsModel {
 
     @SlingObject
