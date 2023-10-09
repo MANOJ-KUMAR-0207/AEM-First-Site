@@ -14,7 +14,6 @@
  *  limitations under the License.
  */
 package com.aemsite.demo.core.models;
-
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
 import javax.annotation.PostConstruct;
