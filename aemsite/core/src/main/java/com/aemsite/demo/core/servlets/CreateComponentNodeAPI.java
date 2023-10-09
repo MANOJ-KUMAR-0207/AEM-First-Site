@@ -25,9 +25,10 @@ import org.slf4j.LoggerFactory;
     }
 )
 public class CreateComponentNodeAPI extends SlingAllMethodsServlet {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 6L;
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    
     @Override
     protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
         ResourceResolver resourceResolver = request.getResourceResolver();
@@ -36,7 +37,7 @@ public class CreateComponentNodeAPI extends SlingAllMethodsServlet {
         try {
             // Define the path where you want to create the node
             String nodePath = "/content/aemsite/newNode";
-
+            
             // Check if the node doesn't exist already
             if (!session.nodeExists(nodePath)) 
             {
