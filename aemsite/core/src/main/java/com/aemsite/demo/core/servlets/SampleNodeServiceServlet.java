@@ -32,8 +32,8 @@ public class SampleNodeServiceServlet extends SlingAllMethodsServlet
 	 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response){
 	        ResourceResolver resourceResolver = request.getResourceResolver();
 	        Session session = resourceResolver.adaptTo(Session.class);
-	        String parentPath="/content/aemsite/test";
-	        String nodeName = "sampleServiceNode";
+	        String parentPath="/content/aemsite";
+	        String nodeName = "sampleServiceNode2";
 	        String type="nt:unstructured";
 	        try {
 	            sampleNodeService.createNode(session,parentPath,nodeName,type);

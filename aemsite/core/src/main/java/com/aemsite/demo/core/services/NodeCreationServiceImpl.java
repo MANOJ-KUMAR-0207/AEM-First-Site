@@ -26,22 +26,6 @@ public class NodeCreationServiceImpl implements NodeCreationService{
 	    @Override
 	    public boolean createNode(String parentPath, String nodeName,String type,SlingHttpServletRequest request) 
 	    {
-//	    	ResourceResolver resourceResolver = request.getResourceResolver();
-//	        Session session = resourceResolver.adaptTo(Session.class);
-//	        try 
-//	        {
-//    	        Node parentNode = session.getNode(parentPath);
-//    	        Node newNode = parentNode.addNode(nodeName, type);
-//    	        newNode.setProperty("propertyName", "propertyValue");
-//    	        session.save();
-//	            return true;
-//	        } catch (Exception e) {
-//	        	 if (resourceResolver != null && resourceResolver.isLive()) {
-//		                resourceResolver.close();
-//		         }
-//	        	 e.printStackTrace();
-//	        	 return false;
-//	        } 
 	    	ResourceResolver resourceResolver = request.getResourceResolver();
 	        Session session = resourceResolver.adaptTo(Session.class);
 

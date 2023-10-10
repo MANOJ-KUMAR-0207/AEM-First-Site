@@ -26,8 +26,8 @@ public class CreateNodeServiceServlet extends SlingAllMethodsServlet
 {
 	private static final long serialVersionUID = 2L;
     @Reference
-//    private NodeCreationService nodeCreationService;
-    private SampleNodeService sampleNodeService;
+    private NodeCreationService nodeCreationService;
+//    private SampleNodeService sampleNodeService;
     
     @Override
     protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException 
@@ -36,18 +36,6 @@ public class CreateNodeServiceServlet extends SlingAllMethodsServlet
         String parentPath = "/content/aemsite";
         String nodeName = "serviceNode";
         String type="nt:unstructured";
-        ResourceResolver resourceResolver = request.getResourceResolver();
-        Session session = resourceResolver.adaptTo(Session.class);
-        try {
-			sampleNodeService.createNode(session, parentPath, nodeName, type);
-		} catch (RepositoryException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-//        
-//        nodeCreationService.createNode(parentPath, nodeName, type,request);
-        
-    	  
-
+        nodeCreationService.createNode(parentPath, nodeName, type,request);
     }
 }

@@ -35,6 +35,6 @@ public class ResourceTypeServlet extends SlingSafeMethodsServlet {
 	private static final long serialVersionUID = 3L;
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write("This message is retrived from Resource Type Servlet");
+        response.getWriter().write("This message is retrieved from Resource Type Servlet");
     }
 }

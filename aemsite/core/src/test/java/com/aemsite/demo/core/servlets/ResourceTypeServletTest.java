@@ -47,6 +47,6 @@ class ResourceTypeServletTest {
     	MockSlingHttpServletRequest req = aemContext.request();
     	MockSlingHttpServletResponse res = aemContext.response();
     	unitTest.doGet(req,res);
-    	assertEquals("This message is retrived from Resource Type Servlet",res.getOutputAsString());
+    	assertEquals("This message is retrieved from Resource Type Servlet",res.getOutputAsString());
     }
 }
